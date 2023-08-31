@@ -1,0 +1,39 @@
+name: test
+description: A new Flutter project.
+
+publish_to: 'none'
+version: 1.0.0+1
+environment:
+  sdk: '>=2.19.3 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  animated_splash_screen: ^1.2.0
+  http: ^0.13.6
+  pinput: ^2.2.31
+  get: ^4.6.5
+  shared_preferences: ^2.2.0
+  table_calendar: ^3.0.9
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/categories/
+
+  fonts:
+    - family: Jost
+      fonts:
+        - asset: fonts/Jost-VariableFont_wght.ttf
+        - asset: fonts/Jost-Italic-VariableFont_wght.ttf
+

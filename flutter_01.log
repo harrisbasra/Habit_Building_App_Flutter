@@ -1,0 +1,82 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter --no-color run --machine --track-widget-creation --device-id=067682514Q109520 --start-paused --dart-define=flutter.inspector.structuredErrors=true lib\main.dart
+
+## exception
+
+OutOfMemoryError: Out of Memory
+
+```
+#0      new Uint8List (dart:typed_data-patch/typed_data_patch.dart:2248:3)
+#1      _File.readAsBytesSync (dart:io/file_impl.dart:589:16)
+#2      ForwardingFile.readAsBytesSync (package:file/src/forwarding/forwarding_file.dart:91:43)
+#3      ForwardingFile.readAsBytesSync (package:file/src/forwarding/forwarding_file.dart:91:43)
+#4      _calculateSha (package:flutter_tools/src/android/gradle.dart:943:32)
+#5      AndroidGradleBuilder.buildGradleApp (package:flutter_tools/src/android/gradle.dart:593:36)
+#6      _rootRunUnary (dart:async/zone.dart:1407:47)
+#7      _CustomZone.runUnary (dart:async/zone.dart:1308:19)
+#8      _FutureListener.handleValue (dart:async/future_impl.dart:156:18)
+#9      Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:840:45)
+#10     Future._propagateToListeners (dart:async/future_impl.dart:869:13)
+#11     Future._completeWithValue (dart:async/future_impl.dart:641:5)
+#12     Future._asyncCompleteWithValue.<anonymous closure> (dart:async/future_impl.dart:715:7)
+#13     _rootRun (dart:async/zone.dart:1399:13)
+#14     _CustomZone.run (dart:async/zone.dart:1301:19)
+#15     _CustomZone.runGuarded (dart:async/zone.dart:1209:7)
+#16     _CustomZone.bindCallbackGuarded.<anonymous closure> (dart:async/zone.dart:1249:23)
+#17     _microtaskLoop (dart:async/schedule_microtask.dart:40:21)
+#18     _startMicrotaskLoop (dart:async/schedule_microtask.dart:49:5)
+#19     _runPendingImmediateCallback (dart:isolate-patch/isolate_patch.dart:123:13)
+#20     _RawReceivePort._handleMessage (dart:isolate-patch/isolate_patch.dart:190:5)
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel beta, 3.13.0-0.1.pre, on Microsoft Windows [Version 10.0.22621.1992], locale en-US)
+    • Flutter version 3.13.0-0.1.pre on channel beta at F:\flutter
+    • Upstream repository https://github.com/flutter/flutter.git
+    • Framework revision 1f6bdb6fa2 (7 days ago), 2023-07-11 14:31:59 -0700
+    • Engine revision ae470c12d3
+    • Dart version 3.1.0 (build 3.1.0-262.1.beta)
+    • DevTools version 2.25.0
+
+[✓] Windows Version (Installed version of Windows is version 10 or higher)
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 34.0.0)
+    • Android SDK at F:\Androidd
+    • Platform android-34, build-tools 34.0.0
+    • Java binary at: F:\AndroidAfterMath\jbr\bin\java
+    • Java version OpenJDK Runtime Environment (build 17.0.6+0-b2043.56-9586694)
+    • All Android licenses accepted.
+
+[✓] Chrome - develop for the web
+    • Chrome at C:\Program Files\Google\Chrome\Application\chrome.exe
+
+[✓] Visual Studio - develop Windows apps (Visual Studio Community 2022 17.6.4)
+    • Visual Studio at C:\Program Files\Microsoft Visual Studio\2022\Community
+    • Visual Studio Community 2022 version 17.6.33815.320
+    • Windows 10 SDK version 10.0.22000.0
+
+[✓] Android Studio (version 2022.2)
+    • Android Studio at F:\AndroidAfterMath
+    • Flutter plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/9212-flutter
+    • Dart plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/6351-dart
+    • Java version OpenJDK Runtime Environment (build 17.0.6+0-b2043.56-9586694)
+
+[✓] Connected device (4 available)
+    • Infinix X695 (mobile) • 067682514Q109520 • android-arm64  • Android 11 (API 30)
+    • Windows (desktop)     • windows          • windows-x64    • Microsoft Windows [Version 10.0.22621.1992]
+    • Chrome (web)          • chrome           • web-javascript • Google Chrome 114.0.5735.199
+    • Edge (web)            • edge             • web-javascript • Microsoft Edge 114.0.1823.82
+
+[✓] Network resources
+    • All expected network resources are available.
+
+• No issues found!
+```
