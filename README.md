@@ -1,4 +1,4 @@
-# test
+# Habit Now Flutter Application
 
 A new Flutter project.
 
@@ -15,7 +15,7 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-Images: 
+# Images 
 
 ![Frequency 3](https://github.com/harrisbasra/Habit_Building_App_Flutter/assets/101965956/049d10c0-a5e8-4636-8e0b-8fe24a185bb0)
 ![Category](https://github.com/harrisbasra/Habit_Building_App_Flutter/assets/101965956/e7cb670a-4a82-4bbd-840e-989264ea48fa)
